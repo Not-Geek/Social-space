@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -25,7 +26,7 @@
             <a class="nav-item nav-link" href="#" class='btn btn-simple' >Post</a>
             <a class="nav-item nav-link" href="#" class='btn btn-simple' >Groups</a>
             <a class="nav-item nav-link" href="#" class='btn btn-simple' >Create Group</a>
-            <a class="nav-item nav-link" href="{% url 'accounts:logout' %} class='btn btn-simple' ">Logout</a>
+            <a class="nav-item nav-link" href="{% url 'accounts:logout' %}" class='btn btn-simple' >Logout</a>
           {% else %}
             <a class="nav-item nav-link" class='btn btn-simple' href="#">Groups</a>
             <a class="nav-item nav-link" class='btn btn-simple' href="{% url 'accounts:login' %}">Log in</a>
